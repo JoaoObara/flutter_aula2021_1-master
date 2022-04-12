@@ -5,7 +5,7 @@ void main() => runApp(bottom_nav());
 class bottom_nav extends StatelessWidget {
   const bottom_nav({Key? key}) : super(key: key);
 
-  static const String _tittle = 'fluuter Code Simple';
+  static const String _tittle = 'flutter Code Simple';
 
   @override
   Widget build(BuildContext context) {

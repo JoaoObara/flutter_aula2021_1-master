@@ -1,21 +1,16 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(bottom_nav());
-
+//Classe Principal
 class bottom_nav extends StatelessWidget {
-  const bottom_nav({Key? key}) : super(key: key);
-
-  static const String _tittle = 'flutter Code Simple';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: _tittle,
       home: MyStatefulWidget(),
     );
   }
 }
 
+//
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({Key? key}) : super(key: key);
 
@@ -52,12 +47,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     });
   }
 
+//Barra de navegação
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Bottom NavigationBar Sample'),
-      ),
       body: Center(child: _widgetOptions.elementAt(_selectedIndex)),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -82,6 +75,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             backgroundColor: Colors.pink,
           ),
         ],
+        //Navegação
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,

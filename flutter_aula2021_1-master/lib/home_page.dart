@@ -1,5 +1,6 @@
 // sempre se cria uma classe que vai dentro da classe StateFul
 import 'package:flutter/material.dart';
+import 'package:ola_mundo/bottom_navigation_bar.dart';
 
 import 'app_controller.dart';
 import 'menu_drawer.dart';
@@ -25,7 +26,8 @@ class HomePageState extends State<HomePage> {
         actions: [CustomSwitch()],
       ),
 
-      body: Container(
+      body: bottom_nav()
+      /* Container( //Conteudo que já estava inicialmente
         width: double.infinity,
         height: double.infinity,
         child: ListView(
@@ -64,7 +66,8 @@ class HomePageState extends State<HomePage> {
             ),
           ],
         ),
-      ),
+      ) */
+      ,
       // passando botao
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),

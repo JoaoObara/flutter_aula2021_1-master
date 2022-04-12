@@ -78,7 +78,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            label: 'Settongs',
+            label: 'Settings',
             backgroundColor: Colors.pink,
           ),
         ],

@@ -38,6 +38,10 @@ class _bottom_nav_barState extends State<bottom_nav_bar> {
     Text(
       'Index 3: Settings',
       style: optionStyle,
+    ),
+    Text(
+      'Index 4: Others',
+      style: optionStyle,
     )
   ];
 
@@ -73,6 +77,11 @@ class _bottom_nav_barState extends State<bottom_nav_bar> {
             icon: Icon(Icons.settings),
             label: 'Settings',
             backgroundColor: Colors.pink,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.question_answer),
+            label: 'Others',
+            backgroundColor: Colors.blueGrey,
           ),
         ],
         //Navegação

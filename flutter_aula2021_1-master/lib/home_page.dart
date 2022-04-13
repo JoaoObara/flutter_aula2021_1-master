@@ -25,8 +25,7 @@ class HomePageState extends State<HomePage> {
         title: Text('Aula Dispostivo Móvel'),
         actions: [CustomSwitch()],
       ),
-
-      body: bottom_nav()
+      body: bottom_nav_bar(),
       /* Container( //Conteudo que já estava inicialmente
         width: double.infinity,
         height: double.infinity,
@@ -66,19 +65,7 @@ class HomePageState extends State<HomePage> {
             ),
           ],
         ),
-      ) */
-      ,
-      // passando botao
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add_circle),
-        //vamos passar a funcao contar
-        onPressed: () {
-          setState(() {
-            counter++;
-            Navigator.of(context).pushNamed('/perfil');
-          });
-        },
-      ),
+      ), */
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//Classe Principal
+/* //Classe Principal
 class bottom_nav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,17 +8,17 @@ class bottom_nav extends StatelessWidget {
       home: MyStatefulWidget(),
     );
   }
-}
+} */
 
 //
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
+class bottom_nav_bar extends StatefulWidget {
+  const bottom_nav_bar({Key? key}) : super(key: key);
 
   @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
+  State<bottom_nav_bar> createState() => _bottom_nav_barState();
 }
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+class _bottom_nav_barState extends State<bottom_nav_bar> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
@@ -36,7 +36,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       style: optionStyle,
     ),
     Text(
-      'Index 1: Settings',
+      'Index 3: Settings',
       style: optionStyle,
     )
   ];

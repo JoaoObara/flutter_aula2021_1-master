@@ -10,6 +10,5 @@ class AppController extends ChangeNotifier {
     // contrário de um boolean
     isDarkTheme = !isDarkTheme;
     notifyListeners();
-    print('Mudou de tema');
   }
 }
